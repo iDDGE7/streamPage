@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+:root {
+  --yellow: #ffad23;
+  --blue: #06117d;
+  --blueLight: #6491e2; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; }
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: #1a1a1a;
+  display: flex;
+  flex-direction: column; }
+  .wrapper .main-header {
+    position: relative;
+    background: white;
+    width: 100%;
+    padding: 0.5em 1em;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: var(--blueLight) 10px solid; }
+    .wrapper .main-header .content-logo {
+      height: 50px;
+      width: 80px;
+      object-fit: contain; }
+      @media (min-width: 700px) {
+        .wrapper .main-header .content-logo {
+          height: 80px;
+          width: 100px; } }
+    .wrapper .main-header .content-title {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .wrapper .main-header .content-title .title-live {
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        color: var(--blue); }
+        @media screen and (min-width: 700px) {
+          .wrapper .main-header .content-title .title-live {
+            font-size: 1em; } }
+      .wrapper .main-header .content-title .circle-live {
+        width: 1em;
+        height: 1em;
+        background: var(--yellow);
+        border-radius: 100%; }
+        @media screen and (max-width: 700px) {
+          .wrapper .main-header .content-title .circle-live {
+            width: 0.7em;
+            height: 0.7em; } }
+    .wrapper .main-header .line-header {
+      position: absolute;
+      background: linear-gradient(270deg, #009ad7 0%, #72c74f 49.49%, #009ad7 100%);
+      box-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
+      width: 100%;
+      height: 1em;
+      bottom: 0;
+      left: 0; }
+    @media (min-width: 700px) {
+      .wrapper .main-header {
+        padding: 0em 3em; } }
+  .wrapper .container-live {
+    width: 100%;
+    flex-grow: 1;
+    overflow: hidden; }
+    .wrapper .container-live .iframe-live {
+      width: 100%;
+      height: 100%; }
